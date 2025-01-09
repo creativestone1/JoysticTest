@@ -104,8 +104,7 @@ void joystickSubsystemProcess() {
                 }
 
                 // Log joystick state asynchronously
-                loggingAsyncLog(SDL_LOG_CATEGORY_INPUT, SDL_LOG_PRIORITY_INFO, "Stick 1: X = %d, Y = %d", joystickState.stick1X, joystickState.stick1Y);
-                loggingAsyncLog(SDL_LOG_CATEGORY_INPUT, SDL_LOG_PRIORITY_INFO, "Stick 2: X = %d, Y = %d", joystickState.stick2X, joystickState.stick2Y);
+                loggingAsyncLog(SDL_LOG_CATEGORY_INPUT, SDL_LOG_PRIORITY_INFO, "Stick 1: X = %d, Y = %d. Stick 2: X = %d, Y = %d", joystickState.stick1X, joystickState.stick1Y, joystickState.stick2X, joystickState.stick2Y);
             }
         }
 
